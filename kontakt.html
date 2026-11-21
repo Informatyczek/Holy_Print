@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | Holy Print</title>
+  <meta name="description" content="Napisz do Holy Print – pytania o obrazki i breloki ze świętymi, zamówienia hurtowe dla parafii i szkół, zamówienia indywidualne.">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:title" content="Kontakt – Holy Print">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/integrations/orders.js" defer></script>
+  <script src="assets/js/pages/contact.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" data-sparkles="10" data-sparkles-x="62-97">
+      <img class="page-hero__halo" src="assets/img/aureola.svg" alt="" aria-hidden="true">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li aria-current="page">Kontakt</li></ol></nav>
+        <h1 class="page-hero__title">Napisz do nas</h1>
+        <p class="lead">Masz pytanie o obrazek, zamówienie dla całej klasy albo pomysł na nowego patrona? Chętnie pomożemy.</p>
+      </div>
+      <div class="edge-clouds edge-clouds--bottom" style="--edge: var(--bg)" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--tight" style="padding-top:28px">
+      <div class="container contact-grid">
+        <div class="contact-cards">
+          <a class="contact-card" data-cfg-href="mailto:|contact.email" href="#" data-cfg-if="contact.email">
+            <span class="perk__icon"><span data-icon="mail"></span></span>
+            <span><span class="contact-card__label">E-mail</span><br><span class="contact-card__value" data-cfg="contact.email"></span></span>
+          </a>
+          <a class="contact-card" data-cfg-href="tel:|contact.phone" href="#" data-cfg-if="contact.phone">
+            <span class="perk__icon"><span data-icon="device-phone"></span></span>
+            <span><span class="contact-card__label">Telefon</span><br><span class="contact-card__value" data-cfg="contact.phone"></span></span>
+          </a>
+          <div class="contact-card" data-cfg-if="contact.hours">
+            <span class="perk__icon"><span data-icon="clock"></span></span>
+            <span><span class="contact-card__label">Godziny kontaktu</span><br><span class="contact-card__value" data-cfg="contact.hours"></span></span>
+          </div>
+          <div class="notice notice--info" id="hurt">
+            <span data-icon="teach"></span>
+            <span><strong>Zamówienia hurtowe</strong> – dla parafii, szkół, katechetów i wspólnot. Przy obrazkach działa rabat ilościowy (<span data-fill="bulk-tiers">od 10 szt. −10%, od 25 szt. −15%</span>), a przy większych ilościach przygotujemy indywidualną wycenę.</span>
+          </div>
+          <div class="notice" id="indywidualne">
+            <span data-icon="lightbulb"></span>
+            <span><strong>Inny patron?</strong> Napisz, którego świętego brakuje w sklepie – sprawdzimy, czy możemy przygotować dla niego obrazek.</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <form class="form-card" id="contact-form" novalidate>
+            <h2 class="co-section__title">Formularz kontaktowy</h2>
+            <div class="form-grid">
+              <div class="field span-3" data-field="name">
+                <label for="c-name">Imię</label>
+                <input class="input" id="c-name" name="name" autocomplete="given-name" maxlength="80">
+                <p class="field-error"><span data-icon="alert"></span><span>Podaj imię.</span></p>
+              </div>
+              <div class="field span-3" data-field="email">
+                <label for="c-email">E-mail</label>
+                <input class="input" id="c-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120">
+                <p class="field-error"><span data-icon="alert"></span><span>Podaj poprawny adres e-mail.</span></p>
+              </div>
+              <div class="field" data-field="temat">
+                <label for="c-topic">Temat</label>
+                <select class="select" id="c-topic" name="temat">
+                  <option value="pytanie">Pytanie o produkt</option>
+                  <option value="indywidualne">Zamówienie indywidualne (inny patron)</option>
+                  <option value="hurt">Zamówienie hurtowe (parafia, szkoła, katecheza)</option>
+                  <option value="zamowienie">Moje zamówienie</option>
+                  <option value="wspolpraca">Współpraca</option>
+                  <option value="inne">Inne</option>
+                </select>
+              </div>
+              <div class="field" data-field="patron" id="patron-field" hidden>
+                <label for="c-patron">Patron lub imię <span class="opt">(opcjonalnie)</span></label>
+                <input class="input" id="c-patron" name="patron" maxlength="80" placeholder="np. św. Jan Paweł II, imię Zofia">
+              </div>
+              <div class="field" data-field="nr" id="order-field" hidden>
+                <label for="c-nr">Numer zamówienia <span class="opt">(opcjonalnie)</span></label>
+                <input class="input" id="c-nr" name="nr" maxlength="30" placeholder="np. HP-261121-AB12">
+              </div>
+              <div class="field" data-field="message">
+                <label for="c-message">Wiadomość</label>
+                <textarea class="textarea" id="c-message" name="message" rows="6" maxlength="2000"></textarea>
+                <p class="field-error"><span data-icon="alert"></span><span>Napisz kilka słów.</span></p>
+              </div>
+              <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Nie wypełniaj <input name="website" tabindex="-1" autocomplete="off"></label></div>
+            </div>
+            <p class="co-legal">Wysyłając wiadomość, przekazujesz nam dane potrzebne do odpowiedzi. Szczegóły w <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</p>
+            <div class="notice notice--error" id="contact-error" role="alert" hidden></div>
+            <button class="btn btn--primary btn--lg" type="submit" id="contact-submit"><span data-icon="mail"></span>Wyślij wiadomość</button>
+          </form>
+          <div id="contact-done" hidden class="empty-cart">
+            <div class="thanks__check" style="margin:0 auto 10px"><span data-icon="check"></span></div>
+            <p class="empty-cart__title">Wiadomość wysłana!</p>
+            <p class="empty-cart__text" id="contact-done-text">Dziękujemy – odpowiemy najszybciej, jak to możliwe.</p>
+            <a class="btn btn--ghost" href="sklep.html">Wróć do sklepu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="faq-title">
+      <div class="edge-clouds edge-clouds--top" style="--edge: var(--bg-soft)" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow"><span data-icon="message"></span>Pytania</p>
+          <h2 class="h2" id="faq-title">Zanim napiszesz</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Ile czeka się na paczkę?<span data-icon="chevron-down"></span></summary><div class="faq__body"><p>Zamówienie przygotowujemy zwykle w ciągu <span data-cfg="shop.processingTime">1–3 dni roboczych</span> od zaksięgowania płatności. Doręczenie przez InPost trwa najczęściej 1–2 dni robocze.</p></div></details>
+          <details><summary>Ile kosztuje dostawa?<span data-icon="chevron-down"></span></summary><div class="faq__body"><p>Dostawa do Paczkomatu kosztuje od <span data-fill="cheapest-shipping">13,99 zł</span>, a od <span data-fill="free-from">150,00 zł</span> jest darmowa. Wszystkie opcje znajdziesz na stronie <a href="dostawa-i-platnosci.html">Dostawa i płatności</a>.</p></div></details>
+          <details><summary>Jak mogę zapłacić?<span data-icon="chevron-down"></span></summary><div class="faq__body"><p>Przelewem tradycyjnym lub przelewem BLIK na telefon. Dane do płatności zobaczysz zaraz po złożeniu zamówienia.</p></div></details>
+          <details><summary>Czy wysyłacie za granicę?<span data-icon="chevron-down"></span></summary><div class="faq__body"><p>Na razie wysyłamy na terenie Polski. Jeśli chcesz zamówić za granicę – napisz do nas, poszukamy rozwiązania.</p></div></details>
+          <details><summary>Czy mogę zwrócić produkt?<span data-icon="chevron-down"></span></summary><div class="faq__body"><p>Tak, masz <span data-cfg="legal.returnDays">14</span> dni na odstąpienie od umowy bez podawania przyczyny. Wyjątkiem są produkty wykonane na indywidualne zamówienie. Szczegóły: <a href="zwroty-i-reklamacje.html">Zwroty i reklamacje</a>.</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer" style="--footer-edge: var(--bg-soft)"></footer>
+</body>
+</html>

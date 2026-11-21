@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dostawa i płatności | Holy Print</title>
+  <meta name="description" content="Koszty i czas dostawy (Paczkomaty InPost, kurier) oraz dostępne metody płatności w sklepie Holy Print.">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/legal.js" defer></script>
+</head>
+<body data-page="legal">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" data-sparkles="8" data-sparkles-x="62-97">
+      <img class="page-hero__halo" src="assets/img/aureola.svg" alt="" aria-hidden="true">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li aria-current="page">Dostawa i płatności</li></ol></nav>
+        <h1 class="page-hero__title">Dostawa i płatności</h1>
+        <p class="lead">Wysyłamy w <span data-cfg="shop.processingTime">1–3 dni robocze</span>. Od <span data-fill="free-from">150,00 zł</span> dostawa jest darmowa.</p>
+      </div>
+      <div class="edge-clouds edge-clouds--bottom" style="--edge: var(--bg)" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--tight" style="padding-top:28px">
+      <div class="container legal-layout">
+        <nav class="legal-nav" aria-label="Informacje">
+          <p>Informacje</p>
+          <a href="regulamin.html">Regulamin</a>
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+          <a href="dostawa-i-platnosci.html">Dostawa i płatności</a>
+          <a href="zwroty-i-reklamacje.html">Zwroty i reklamacje</a>
+        </nav>
+
+        <article class="prose">
+          <h2>Sposoby i koszty dostawy</h2>
+          <table id="shipping-table"></table>
+          <p>Zamówienie przygotowujemy do wysyłki w ciągu <strong data-cfg="shop.processingTime"></strong> od zaksięgowania płatności. Do tego dochodzi czas doręczenia przez przewoźnika. Obecnie wysyłamy na terenie Polski – jeśli chcesz zamówić za granicę, <a href="kontakt.html">napisz do nas</a>.</p>
+
+          <h3>Jak wybrać Paczkomat?</h3>
+          <p>W formularzu zamówienia wpisz kod Paczkomatu lub PaczkoPunktu (np. <strong>KRA01M</strong>). Najbliższy punkt i jego kod znajdziesz na <a href="https://inpost.pl/znajdz-paczkomat" target="_blank" rel="noopener">mapie InPost</a>. Gdy paczka dotrze, InPost powiadomi Cię SMS-em i e-mailem.</p>
+
+          <h2>Metody płatności</h2>
+          <ul id="payment-list"></ul>
+          <div class="notice notice--info"><span data-icon="info-box"></span><span>Dane do przelewu tradycyjnego i numer do przelewu BLIK pokażemy zaraz po złożeniu zamówienia. W tytule przelewu wpisz numer zamówienia – dzięki temu szybciej je wyślemy.</span></div>
+
+          <h2>Rabat ilościowy</h2>
+          <p>Kupujesz dla klasy, grupy parafialnej albo na nagrody? Przy zakupie obrazków naliczamy automatycznie rabat: <strong data-fill="bulk-tiers">od 10 szt. −10%, od 25 szt. −15%</strong>. Wzory można dowolnie łączyć.</p>
+
+          <h2>Faktury</h2>
+          <p>Jeśli potrzebujesz faktury, zaznacz to w formularzu zamówienia i podaj dane firmy.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

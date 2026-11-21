@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Po publikacji zamień "https://twoja-domena.pl" na prawdziwy adres sklepu -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://twoja-domena.pl/</loc><priority>1.0</priority></url>
+  <url><loc>https://twoja-domena.pl/sklep.html</loc><priority>0.9</priority></url>
+  <url><loc>https://twoja-domena.pl/sklep.html?kategoria=obrazki</loc></url>
+  <url><loc>https://twoja-domena.pl/sklep.html?kategoria=breloki</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-michal-archaniol</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-teresa-z-lisieux</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-ojciec-pio</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-franciszek-z-asyzu</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-klara-z-asyzu</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-teresa-modl-sie-za-nami</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=obrazek-teresa-edycja-rozana</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=brelok-michal-archaniol</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=brelok-teresa-z-lisieux</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=brelok-ojciec-pio</loc></url>
+  <url><loc>https://twoja-domena.pl/produkt.html?id=zestaw-swieci-patroni</loc></url>
+  <url><loc>https://twoja-domena.pl/o-nas.html</loc></url>
+  <url><loc>https://twoja-domena.pl/kontakt.html</loc></url>
+  <url><loc>https://twoja-domena.pl/dostawa-i-platnosci.html</loc></url>
+  <url><loc>https://twoja-domena.pl/zwroty-i-reklamacje.html</loc></url>
+  <url><loc>https://twoja-domena.pl/regulamin.html</loc></url>
+  <url><loc>https://twoja-domena.pl/polityka-prywatnosci.html</loc></url>
+</urlset>

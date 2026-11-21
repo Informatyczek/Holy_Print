@@ -1,0 +1,9 @@
+# Dane zapisywane przez przykładowy serwer (zamówienia, wiadomości klientów)
+backend-przyklad/dane/
+
+# Pliki systemowe i narzędzi
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

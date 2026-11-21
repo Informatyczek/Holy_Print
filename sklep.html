@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sklep – obrazki i breloki ze świętymi | Holy Print</title>
+  <meta name="description" content="Pixelowe obrazki i breloki ze świętymi patronami: Michał Archanioł, Ojciec Pio, Teresa z Lisieux, Franciszek i Klara z Asyżu. Zamów online z dostawą do Paczkomatu InPost.">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Holy Print">
+  <meta property="og:title" content="Sklep Holy Print – obrazki i breloki ze świętymi">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:locale" content="pl_PL">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/shop.js" defer></script>
+</head>
+<body data-page="shop">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" data-sparkles="10" data-sparkles-x="62-97">
+      <img class="page-hero__halo" src="assets/img/aureola.svg" alt="" aria-hidden="true">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki">
+          <ol>
+            <li><a href="index.html">Strona główna</a></li>
+            <li id="crumb-current" aria-current="page">Sklep</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title" id="shop-title">Sklep</h1>
+        <p class="lead" id="shop-lead">Obrazki i breloki ze świętymi patronami w pixelowej odsłonie.</p>
+      </div>
+      <div class="edge-clouds edge-clouds--bottom" style="--edge: var(--bg)" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--tight" style="padding-top:28px" aria-label="Produkty">
+      <div class="container">
+        <div class="shop-tools">
+          <div class="shop-tools__row">
+            <div class="tabs-cat" role="group" aria-label="Kategoria" id="cat-tabs"></div>
+            <label class="shop-sort" for="sort"><span>Sortuj:</span>
+              <select class="select" id="sort">
+                <option value="polecane">Polecane</option>
+                <option value="cena-rosnaco">Cena: od najniższej</option>
+                <option value="cena-malejaco">Cena: od najwyższej</option>
+                <option value="nazwa">Nazwa: A–Z</option>
+              </select>
+            </label>
+          </div>
+          <div class="shop-tools__row">
+            <div class="saint-filter" role="group" aria-label="Patron" id="saint-filter"></div>
+            <div class="shop-search">
+              <span data-icon="search"></span>
+              <input class="input" type="search" id="shop-q" placeholder="Szukaj: imię, święty, brelok…" aria-label="Szukaj w sklepie" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <h2 class="sr-only">Produkty</h2>
+        <p class="shop-count" id="shop-count" aria-live="polite"></p>
+        <div class="grid-products" id="shop-grid" style="margin-top:14px"></div>
+        <div class="shop-empty" id="shop-empty" hidden>
+          <img src="assets/img/aureola.svg" alt="" aria-hidden="true">
+          <h2 class="h3">Nic tu nie ma… jeszcze</h2>
+          <p class="muted">Nie znaleźliśmy produktów pasujących do wybranych filtrów.</p>
+          <div class="cluster" style="justify-content:center">
+            <button class="btn btn--ghost btn--sm" type="button" id="reset-filters">Wyczyść filtry</button>
+            <a class="btn btn--primary btn--sm" href="kontakt.html?temat=indywidualne">Zapytaj o własny wzór</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

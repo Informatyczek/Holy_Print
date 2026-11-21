@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zamówienie | Holy Print</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/integrations/shipping.js" defer></script>
+  <script src="assets/js/integrations/payments.js" defer></script>
+  <script src="assets/js/integrations/orders.js" defer></script>
+  <script src="assets/js/pages/checkout.js" defer></script>
+</head>
+<body data-page="checkout">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:64px">
+      <div class="container page-hero__inner">
+        <ol class="steps-bar" aria-label="Etapy zamówienia">
+          <li class="is-done"><span class="steps-bar__dot"><span data-icon="check"></span></span><a href="koszyk.html" style="color:inherit">Koszyk</a></li>
+          <li class="is-current"><span class="steps-bar__dot">2</span>Dane i dostawa</li>
+          <li><span class="steps-bar__dot">3</span>Potwierdzenie</li>
+        </ol>
+        <h1 class="page-hero__title">Zamówienie</h1>
+      </div>
+      <div class="edge-clouds edge-clouds--bottom" style="--edge: var(--bg)" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--tight" style="padding-top:24px">
+      <div class="container" id="checkout-root"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

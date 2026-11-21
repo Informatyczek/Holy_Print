@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zwroty i reklamacje | Holy Print</title>
+  <meta name="description" content="Jak zwrócić produkt w ciągu 14 dni i jak złożyć reklamację w sklepie Holy Print. Wzór formularza odstąpienia od umowy.">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/legal.js" defer></script>
+</head>
+<body data-page="legal">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li aria-current="page">Zwroty i reklamacje</li></ol></nav>
+        <h1 class="page-hero__title">Zwroty i reklamacje</h1>
+        <p class="lead">Masz <span data-cfg="legal.returnDays">14</span> dni na zwrot bez podawania przyczyny.</p>
+      </div>
+      <div class="edge-clouds edge-clouds--bottom" style="--edge: var(--bg)" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--tight" style="padding-top:28px">
+      <div class="container legal-layout">
+        <nav class="legal-nav" aria-label="Informacje">
+          <p>Informacje</p>
+          <a href="regulamin.html">Regulamin</a>
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+          <a href="dostawa-i-platnosci.html">Dostawa i płatności</a>
+          <a href="zwroty-i-reklamacje.html">Zwroty i reklamacje</a>
+        </nav>
+
+        <article class="prose">
+          <h2>Zwrot w 3 krokach</h2>
+          <ol>
+            <li><strong>Poinformuj nas</strong> – w ciągu <span data-cfg="legal.returnDays"></span> dni od otrzymania paczki napisz na <span data-cfg="contact.email"></span>, że odstępujesz od umowy. Podaj numer zamówienia. Możesz użyć wzoru poniżej, ale nie musisz.</li>
+            <li><strong>Odeślij produkt</strong> – najpóźniej 14 dni od wysłania oświadczenia, na adres: <strong data-cfg="seller.address"></strong>. Koszt odesłania pokrywasz Ty.</li>
+            <li><strong>Odbierz pieniądze</strong> – zwrócimy płatność (wraz z kosztem najtańszej dostawy) w ciągu 14 dni od otrzymania Twojego oświadczenia. Możemy wstrzymać zwrot do chwili otrzymania produktu lub dowodu jego nadania.</li>
+          </ol>
+          <div class="notice"><span data-icon="alert"></span><span>Prawo odstąpienia od umowy nie obejmuje produktów wykonanych na indywidualne zamówienie, np. obrazka z wzorem przygotowanym specjalnie dla Ciebie.</span></div>
+
+          <h2>Reklamacje</h2>
+          <p>Jeśli produkt dotarł uszkodzony albo jest niezgodny z opisem, napisz na <span data-cfg="contact.email"></span>. Podaj numer zamówienia, opisz problem i dołącz zdjęcia. Napisz też, czego oczekujesz – naprawy lub wymiany, a w przypadkach przewidzianych prawem także obniżenia ceny lub odstąpienia od umowy.</p>
+          <p>Odpowiemy w ciągu <strong><span data-cfg="legal.complaintDays"></span> dni</strong>. Odpowiadamy za niezgodność towaru z umową, która ujawni się w ciągu 2 lat od dostarczenia.</p>
+          <p>Jeśli przesyłka dotarła wyraźnie uszkodzona, warto w obecności kuriera spisać protokół szkody – ułatwi to reklamację, ale nie jest warunkiem jej uwzględnienia.</p>
+
+          <h2>Wzór formularza odstąpienia od umowy</h2>
+          <p class="muted small">Formularz należy wypełnić i odesłać tylko w przypadku chęci odstąpienia od umowy.</p>
+          <div class="withdraw-form">
+            <p><strong>Adresat:</strong> <span data-cfg="seller.legalName"></span>, <span data-cfg="seller.address"></span>, e-mail: <span data-cfg="contact.email"></span></p>
+            <p>Ja/My(*) niniejszym informuję/informujemy(*) o moim/naszym odstąpieniu od umowy sprzedaży następujących rzeczy:</p>
+            <p>……………………………………………………………………………………………</p>
+            <p>Numer zamówienia: ………………………………</p>
+            <p>Data zawarcia umowy(*) / odbioru(*): ………………………………</p>
+            <p>Imię i nazwisko konsumenta(-ów): ………………………………………………</p>
+            <p>Adres konsumenta(-ów): ……………………………………………………………</p>
+            <p>Podpis konsumenta(-ów) (tylko jeżeli formularz jest przesyłany w wersji papierowej): ………………………</p>
+            <p>Data: ………………………</p>
+            <p class="muted small">(*) Niepotrzebne skreślić.</p>
+          </div>
+          <button class="btn btn--ghost btn--sm" type="button" id="print-form"><span data-icon="print"></span>Wydrukuj formularz</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

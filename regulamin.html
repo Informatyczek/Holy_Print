@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulamin sklepu | Holy Print</title>
+  <meta name="description" content="Regulamin sklepu internetowego Holy Print – zamówienia, płatności, dostawa, odstąpienie od umowy i reklamacje.">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/legal.js" defer></script>
+</head>
+<body data-page="legal">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li aria-current="page">Regulamin</li></ol></nav>
+        <h1 class="page-hero__title">Regulamin sklepu</h1>
+        <p class="muted">Obowiązuje od: <span data-cfg="legal.termsUpdated"></span></p>
+      </div>
+      <div class="edge-clouds edge-clouds--bottom" style="--edge: var(--bg)" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section--tight" style="padding-top:28px">
+      <div class="container legal-layout">
+        <nav class="legal-nav" aria-label="Informacje">
+          <p>Informacje</p>
+          <a href="regulamin.html">Regulamin</a>
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+          <a href="dostawa-i-platnosci.html">Dostawa i płatności</a>
+          <a href="zwroty-i-reklamacje.html">Zwroty i reklamacje</a>
+        </nav>
+
+        <article class="prose">
+          <div class="template-note" data-template-note hidden><span data-icon="info-box"></span><span><strong>Wzór do uzupełnienia.</strong> Dane sprzedawcy pobierane są z pliku <code>assets/js/config.js</code>. Przed rozpoczęciem sprzedaży uzupełnij je i najlepiej skonsultuj regulamin z prawnikiem lub rzecznikiem konsumentów. Ta ramka zniknie automatycznie po wpisaniu danych.</span></div>
+
+          <h2>§ 1. Postanowienia ogólne</h2>
+          <ol>
+            <li>Sklep internetowy Holy Print, dostępny pod adresem <span data-shop-url></span> (dalej: „Sklep”), prowadzi <strong data-cfg="seller.legalName"></strong>, <span data-cfg="seller.address"></span><span data-if-nip hidden>, NIP: <span data-cfg="seller.nip"></span></span><span data-if-regon hidden>, REGON: <span data-cfg="seller.regon"></span></span> (dalej: „Sprzedawca”).</li>
+            <li>Kontakt ze Sprzedawcą: e-mail <span data-cfg="contact.email"></span>, telefon <span data-cfg="contact.phone" data-cfg-empty="—"></span>, adres korespondencyjny jak wyżej.</li>
+            <li>Regulamin określa zasady korzystania ze Sklepu, składania zamówień, płatności, dostawy, odstąpienia od umowy oraz składania reklamacji. Regulamin jest udostępniany nieodpłatnie, w sposób umożliwiający jego pobranie, utrwalenie i wydrukowanie.</li>
+            <li>Do korzystania ze Sklepu potrzebne są: urządzenie z dostępem do internetu, aktualna przeglądarka internetowa z włączoną obsługą JavaScript oraz aktywny adres e-mail.</li>
+            <li>Klienta obowiązuje zakaz dostarczania treści o charakterze bezprawnym.</li>
+          </ol>
+
+          <h2>§ 2. Definicje</h2>
+          <ol>
+            <li><strong>Klient</strong> – osoba fizyczna, osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, która składa zamówienie w Sklepie.</li>
+            <li><strong>Konsument</strong> – osoba fizyczna dokonująca ze Sprzedawcą czynności prawnej niezwiązanej bezpośrednio z jej działalnością gospodarczą lub zawodową.</li>
+            <li><strong>Przedsiębiorca na prawach konsumenta</strong> – osoba fizyczna zawierająca umowę bezpośrednio związaną z jej działalnością gospodarczą, gdy z treści umowy wynika, że nie posiada ona dla niej charakteru zawodowego. Przysługują jej uprawnienia konsumenta w zakresie wskazanym w ustawie o prawach konsumenta.</li>
+            <li><strong>Produkt</strong> – rzecz ruchoma prezentowana w Sklepie (np. obrazek, brelok, zestaw).</li>
+            <li><strong>Umowa sprzedaży</strong> – umowa sprzedaży Produktu zawierana na odległość między Klientem a Sprzedawcą za pośrednictwem Sklepu.</li>
+          </ol>
+
+          <h2>§ 3. Składanie zamówień</h2>
+          <ol>
+            <li>Zamówienia można składać przez całą dobę, dodając Produkty do koszyka i wypełniając formularz zamówienia.</li>
+            <li>Ceny Produktów podawane są w złotych polskich i są cenami brutto. Cena nie obejmuje kosztów dostawy – ich wysokość Klient poznaje przy wyborze sposobu dostawy, przed złożeniem zamówienia.</li>
+            <li>Złożenie zamówienia następuje po kliknięciu przycisku „Zamawiam z obowiązkiem zapłaty”, co oznacza obowiązek zapłaty ceny wraz z kosztami dostawy.</li>
+            <li>Po złożeniu zamówienia Sprzedawca przesyła na podany adres e-mail potwierdzenie jego przyjęcia. Umowa sprzedaży zostaje zawarta z chwilą otrzymania przez Klienta tego potwierdzenia.</li>
+            <li>Sprzedawca utrwala i udostępnia Klientowi treść zawartej umowy, przesyłając potwierdzenie zamówienia wraz z niniejszym Regulaminem na trwałym nośniku (e-mail).</li>
+          </ol>
+
+          <h2>§ 4. Płatności</h2>
+          <ol>
+            <li>Dostępne metody płatności są wskazane w formularzu zamówienia i na stronie <a href="dostawa-i-platnosci.html">Dostawa i płatności</a>.</li>
+            <li>Przy płatności przelewem tradycyjnym lub przelewem BLIK na telefon Klient zobowiązany jest dokonać zapłaty w terminie <span data-cfg="payments.payWithinDays"></span> dni od złożenia zamówienia. Po bezskutecznym upływie tego terminu Sprzedawca może odstąpić od umowy, o czym poinformuje Klienta e-mailem.</li>
+            <li>Na życzenie Klienta Sprzedawca wystawia dowód zakupu lub fakturę zgodnie z obowiązującymi przepisami.</li>
+          </ol>
+
+          <h2>§ 5. Dostawa</h2>
+          <ol>
+            <li>Dostawa realizowana jest na terytorium Rzeczypospolitej Polskiej, za pośrednictwem przewoźników wskazanych na stronie <a href="dostawa-i-platnosci.html">Dostawa i płatności</a>.</li>
+            <li>Sprzedawca przygotowuje zamówienie do wysyłki w ciągu <span data-cfg="shop.processingTime"></span> od dnia zaksięgowania płatności, a przy płatności przy odbiorze – od dnia zawarcia umowy. Do tego terminu należy doliczyć czas doręczenia przez przewoźnika.</li>
+            <li>Koszty dostawy pokrywa Klient zgodnie z cennikiem, chyba że wartość zamówienia uprawnia do darmowej dostawy.</li>
+          </ol>
+
+          <h2>§ 6. Prawo odstąpienia od umowy</h2>
+          <ol>
+            <li>Konsument oraz przedsiębiorca na prawach konsumenta może odstąpić od umowy sprzedaży w terminie <span data-cfg="legal.returnDays"></span> dni bez podawania przyczyny. Termin biegnie od dnia objęcia Produktu w posiadanie przez Konsumenta lub wskazaną przez niego osobę trzecią inną niż przewoźnik.</li>
+            <li>Aby odstąpić od umowy, wystarczy przed upływem terminu wysłać Sprzedawcy jednoznaczne oświadczenie, np. e-mailem na adres <span data-cfg="contact.email"></span> albo pocztą. Można skorzystać ze wzoru formularza dostępnego na stronie <a href="zwroty-i-reklamacje.html">Zwroty i reklamacje</a>, nie jest to jednak obowiązkowe.</li>
+            <li>Sprzedawca niezwłocznie, nie później niż w terminie 14 dni od dnia otrzymania oświadczenia, zwraca wszystkie dokonane płatności, w tym koszty dostarczenia Produktu, z wyjątkiem dodatkowych kosztów wynikających z wybranego przez Konsumenta sposobu dostawy innego niż najtańszy zwykły sposób dostawy oferowany przez Sprzedawcę.</li>
+            <li>Zwrot płatności następuje przy użyciu takiego samego sposobu płatności, jakiego użył Konsument, chyba że Konsument wyraźnie zgodził się na inny sposób, który nie wiąże się dla niego z żadnymi kosztami. Sprzedawca może wstrzymać się ze zwrotem płatności do chwili otrzymania Produktu z powrotem lub dostarczenia dowodu jego odesłania, w zależności od tego, które zdarzenie nastąpi wcześniej.</li>
+            <li>Konsument zwraca Produkt niezwłocznie, nie później niż w terminie 14 dni od dnia odstąpienia od umowy, na adres Sprzedawcy. Konsument ponosi bezpośrednie koszty zwrotu Produktu.</li>
+            <li>Konsument odpowiada za zmniejszenie wartości Produktu wynikające z korzystania z niego w sposób wykraczający poza konieczny do stwierdzenia jego charakteru, cech i funkcjonowania.</li>
+            <li>Prawo odstąpienia od umowy nie przysługuje w odniesieniu do Produktów nieprefabrykowanych, wyprodukowanych według specyfikacji Konsumenta lub służących zaspokojeniu jego zindywidualizowanych potrzeb (np. obrazków z wzorem przygotowanym na indywidualne zamówienie).</li>
+          </ol>
+
+          <h2>§ 7. Reklamacje</h2>
+          <ol>
+            <li>Sprzedawca odpowiada wobec Konsumenta za brak zgodności Produktu z umową istniejący w chwili jego dostarczenia i ujawniony w ciągu dwóch lat od tej chwili, na zasadach określonych w ustawie o prawach konsumenta.</li>
+            <li>Reklamację można złożyć e-mailem na adres <span data-cfg="contact.email"></span> lub pisemnie na adres Sprzedawcy. Aby przyspieszyć rozpatrzenie, warto podać numer zamówienia, opis niezgodności, żądanie oraz dołączyć zdjęcia.</li>
+            <li>W razie niezgodności Produktu z umową Konsument może żądać jego naprawy lub wymiany, a w przypadkach wskazanych w ustawie – złożyć oświadczenie o obniżeniu ceny albo odstąpieniu od umowy.</li>
+            <li>Sprzedawca odpowiada na reklamację w terminie <span data-cfg="legal.complaintDays"></span> dni od dnia jej otrzymania. Brak odpowiedzi w tym terminie oznacza, że Sprzedawca uznał reklamację.</li>
+            <li>Wobec Klientów niebędących Konsumentami ani przedsiębiorcami na prawach konsumenta odpowiedzialność Sprzedawcy z tytułu rękojmi jest wyłączona w zakresie dopuszczalnym przez prawo.</li>
+          </ol>
+
+          <h2>§ 8. Pozasądowe rozwiązywanie sporów</h2>
+          <ol>
+            <li>Konsument może skorzystać z pozasądowych sposobów rozpatrywania reklamacji i dochodzenia roszczeń, m.in. zwrócić się do miejskiego lub powiatowego rzecznika konsumentów, wojewódzkiego inspektora Inspekcji Handlowej lub organizacji konsumenckich.</li>
+            <li>Informacje o tych procedurach i podmiotach uprawnionych znajdują się na stronie Urzędu Ochrony Konkurencji i Konsumentów: <a href="https://polubowne.uokik.gov.pl" target="_blank" rel="noopener">polubowne.uokik.gov.pl</a>.</li>
+          </ol>
+
+          <h2>§ 9. Dane osobowe</h2>
+          <p>Zasady przetwarzania danych osobowych opisuje <a href="polityka-prywatnosci.html">Polityka prywatności</a>.</p>
+
+          <h2>§ 10. Postanowienia końcowe</h2>
+          <ol>
+            <li>W sprawach nieuregulowanych w Regulaminie stosuje się przepisy prawa polskiego, w szczególności Kodeksu cywilnego oraz ustawy o prawach konsumenta.</li>
+            <li>Postanowienia Regulaminu nie wyłączają ani nie ograniczają praw Konsumentów wynikających z bezwzględnie obowiązujących przepisów prawa.</li>
+            <li>Sprzedawca może zmienić Regulamin z ważnych przyczyn. Do zamówień złożonych przed zmianą stosuje się Regulamin w brzmieniu obowiązującym w dniu złożenia zamówienia.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

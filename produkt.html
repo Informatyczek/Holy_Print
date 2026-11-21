@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produkt | Holy Print</title>
+  <meta name="description" content="Pixelowe obrazki i breloki ze świętymi patronami – Holy Print.">
+  <meta name="theme-color" content="#fbf5ec">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Holy Print">
+  <meta property="og:title" content="Holy Print – obrazki i breloki ze świętymi">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:locale" content="pl_PL">
+  <link rel="preload" href="assets/fonts/jersey-10-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/product.js" defer></script>
+</head>
+<body data-page="product">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="product">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Okruszki"><ol id="crumbs"><li><a href="index.html">Strona główna</a></li><li><a href="sklep.html">Sklep</a></li></ol></nav>
+        <div id="product-root"><p class="muted" style="padding:60px 0">Wczytywanie produktu…</p></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="related-section" hidden aria-labelledby="related-title">
+      <div class="edge-clouds edge-clouds--top" style="--edge: var(--bg-soft)" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span data-icon="sparkle"></span>Zobacz też</p>
+          <h2 class="h2" id="related-title">Może Ci się spodobać</h2>
+        </div>
+        <div class="grid-products" id="related"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-buy" id="sticky-buy" aria-hidden="true"></div>
+  <footer class="site-footer" id="site-footer" style="--footer-edge: var(--bg-soft)"></footer>
+</body>
+</html>
